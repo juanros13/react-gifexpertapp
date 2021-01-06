@@ -5,12 +5,12 @@ export const AddCategory = ({setCategories}) => {
     const [inputValue, setInputValue] = useState('');
 
     const hanledInputChange = (e) =>{
-        console.log(e.target.value);
         setInputValue(e.target.value);
+        // console.log(e.target.value);
     }
     const hanledSubmit = (e) => {
         e.preventDefault();
-        //console.log('submit hecho')
+        // console.log('submit hecho', inputValue);
         if(inputValue.trim().length>2){
             setCategories(cats => [ inputValue,...cats,]);
             setInputValue('');
@@ -21,6 +21,7 @@ export const AddCategory = ({setCategories}) => {
     return (
         <form onSubmit={ hanledSubmit }>
             {/* <h1>{ inputValue }</h1> */}
+            <p> { inputValue } </p>
             <input
                 type='text'
                 value={ inputValue }

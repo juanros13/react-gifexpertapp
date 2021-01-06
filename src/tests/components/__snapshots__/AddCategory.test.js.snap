@@ -4,6 +4,10 @@ exports[`Pruebas en el componente AddCategory Debe mostrarse correctamente AddCa
 <form
   onSubmit={[Function]}
 >
+  <p>
+     
+     
+  </p>
   <input
     onChange={[Function]}
     type="text"

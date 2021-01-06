@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruenas para el componente <GrifGid /> Debe mostrarse correctamente el GrifGrid 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    One punch
+  </h3>
+  <p
+    className="animate__animated animate__flash"
+  >
+    Loading
+  </p>
+  <div
+    className="card-gif"
+  />
+</Fragment>
+`;
+
+exports[`Pruenas para el componente <GrifGid /> debe mostrar items cuando se cargan imnaegens con useFetchGifs  1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    One punch
+  </h3>
+  <div
+    className="card-gif"
+  >
+    <GifGridItem
+      id="abc"
+      key="abc"
+      title="Cualquier cosa"
+      url="http://lcalhost/loquesea.jpg"
+    />
+    <GifGridItem
+      id="abc"
+      key="abc"
+      title="Cualquier cosa"
+      url="http://lcalhost/loquesea.jpg"
+    />
+  </div>
+</Fragment>
+`;
